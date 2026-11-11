@@ -1,0 +1,131 @@
+/* Colors mirror 5-1-pro/src/shared/ui/tokens.css so the site looks like the app. */
+:root {
+  --canvas: #f8fbfa;
+  --surface: #ffffff;
+  --line: #e0e7e4;
+  --fg: #131916;
+  --fg-muted: #4b5551;
+  --primary: #7fffd4;
+  --primary-strong: #0f6854;
+  --on-primary: #033027;
+  --focus: #0f6854;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0d1210;
+    --surface: #161d1a;
+    --line: #3a423f;
+    --fg: #eef3f1;
+    --fg-muted: #c3cbc8;
+    --primary-strong: #7fffd4;
+    --focus: #7fffd4;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--fg);
+  font: 16px/1.5 'Segoe UI', system-ui, sans-serif;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+h2 {
+  margin: 40px 0 12px;
+  font-size: 22px;
+}
+
+h3 {
+  margin: 24px 0 8px;
+  font-size: 18px;
+}
+
+p,
+li {
+  color: var(--fg-muted);
+}
+
+a {
+  color: var(--primary-strong);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.lead {
+  font-size: 18px;
+}
+
+.downloads {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  margin-top: 24px;
+}
+
+.download {
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.download h3 {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: var(--on-primary);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.soon {
+  font-style: italic;
+}
+
+footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
