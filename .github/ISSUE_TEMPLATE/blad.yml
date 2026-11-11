@@ -1,0 +1,39 @@
+name: Błąd
+description: Coś działa inaczej, niż powinno.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Zgłoszenie jest publiczne. Nie wpisuj imion, nazwisk ani zdjęć zawodników.
+  - type: input
+    id: version
+    attributes:
+      label: Wersja aplikacji
+      description: Ustawienia → O aplikacji
+      placeholder: np. 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Urządzenie
+      options: [Android, Windows]
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Model telefonu lub wersja systemu
+      placeholder: np. Samsung A54, Android 15 / Windows 11
+  - type: textarea
+    id: what
+    attributes:
+      label: Co się stało?
+      description: Co zrobiłeś krok po kroku, czego się spodziewałeś i co się stało zamiast tego.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Zrzut ekranu
+      description: Opcjonalnie. Zasłoń dane zawodników.

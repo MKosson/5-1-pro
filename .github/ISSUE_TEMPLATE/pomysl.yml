@@ -1,0 +1,16 @@
+name: Pomysł
+description: Czego brakuje Ci w aplikacji?
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Co chcesz zrobić?
+      description: Opisz sytuację na treningu lub w meczu, w której aplikacja Ci nie pomaga.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Jak to mogłoby działać?
+      description: Opcjonalnie.
