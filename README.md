@@ -4,7 +4,4 @@ Darmowa aplikacja dla trenerów siatkówki amatorów: skład, ustawienia, zapis 
 
 - **Pobieranie i instrukcja instalacji:** https://mkosson.github.io/5-1-pro/
 - **Wszystkie wersje:** [Releases](https://github.com/MKosson/5-1-pro/releases)
-- **Zgłoś błąd lub pomysł:** [Issues](https://github.com/MKosson/5-1-pro/issues/new/choose) (zgłoszenia są publiczne)
-- **Prywatność:** https://mkosson.github.io/5-1-pro/prywatnosc.html
-
-Aplikacja jest darmowa, a jej kod zamknięty. To repozytorium zawiera tylko wydania, stronę projektu i zgłoszenia.
+- **Zgłoś błąd lub pomysł:** [Issues](https://github.com/MKosson/5-1-pro/issues/new/choose)
